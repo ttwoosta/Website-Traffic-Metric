@@ -43,7 +43,7 @@ Partial Class frmWebsiteTraffic
         '
         'btnVisitorAnalytics
         '
-        Me.btnVisitorAnalytics.BackColor = System.Drawing.Color.LightGreen
+        Me.btnVisitorAnalytics.BackColor = System.Drawing.Color.LightSeaGreen
         Me.btnVisitorAnalytics.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVisitorAnalytics.Location = New System.Drawing.Point(53, 81)
         Me.btnVisitorAnalytics.Name = "btnVisitorAnalytics"
@@ -57,7 +57,6 @@ Partial Class frmWebsiteTraffic
         Me.lstVisitorData.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstVisitorData.FormattingEnabled = True
         Me.lstVisitorData.ItemHeight = 24
-        Me.lstVisitorData.Items.AddRange(New Object() {"2", "4", "128", "576", "343", "34", "54", "32"})
         Me.lstVisitorData.Location = New System.Drawing.Point(285, 81)
         Me.lstVisitorData.Name = "lstVisitorData"
         Me.lstVisitorData.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -98,7 +97,7 @@ Partial Class frmWebsiteTraffic
         Me.AcceptButton = Me.btnVisitorAnalytics
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Orange
+        Me.BackColor = System.Drawing.Color.SandyBrown
         Me.ClientSize = New System.Drawing.Size(398, 627)
         Me.Controls.Add(Me.picWebsiteTraffic)
         Me.Controls.Add(Me.lblAverageTimeSpent)
