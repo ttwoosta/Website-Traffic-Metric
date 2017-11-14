@@ -127,6 +127,7 @@ Public Class frmWebsiteTraffic
             decAverageTimeSpent = decTotalTimeSpent / intNumberOfEntries
 
             ' display the average time spent
+            lblAverageTimeSpentLabel.Visible = True
             lblAverageTimeSpent.Visible = True
             lblAverageTimeSpent.Text = decAverageTimeSpent.ToString("F2") & " seconds"
 

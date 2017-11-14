@@ -72,6 +72,7 @@ Partial Class frmWebsiteTraffic
         Me.lblAverageTimeSpentLabel.Size = New System.Drawing.Size(188, 22)
         Me.lblAverageTimeSpentLabel.TabIndex = 3
         Me.lblAverageTimeSpentLabel.Text = "Average Time Spent:"
+        Me.lblAverageTimeSpentLabel.Visible = False
         '
         'lblAverageTimeSpent
         '
@@ -81,6 +82,7 @@ Partial Class frmWebsiteTraffic
         Me.lblAverageTimeSpent.Size = New System.Drawing.Size(163, 22)
         Me.lblAverageTimeSpent.TabIndex = 4
         Me.lblAverageTimeSpent.Text = "26.67 Seconds"
+        Me.lblAverageTimeSpent.Visible = False
         '
         'picWebsiteTraffic
         '
