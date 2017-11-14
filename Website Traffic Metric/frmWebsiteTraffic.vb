@@ -58,7 +58,7 @@ Public Class frmWebsiteTraffic
 
         ' Declare and initialize variables
         Dim strTimeEntered As String
-        Dim intTimeEntered As Integer
+        Dim decTimeEntered As Decimal
         Dim decAverageTimeSpent As Decimal
         Dim decTotalTimeSpent As Decimal = 0D
 
@@ -75,6 +75,12 @@ Public Class frmWebsiteTraffic
 
         Const cintMaxNumberOfEntries As Integer = 12
         Dim intNumberOfEntries As Integer = 0
+
+        ' cleanup any previous entered values
+        ' and hide Average Time Spent labels
+        lstVisitorData.Items.Clear()
+        lblAverageTimeSpent.Visible = False
+        lblAverageTimeSpentLabel.Visible = False
 
         ' This Do...Until loop allows the user enter the time spent in seconds
         ' up to 12 visitors. The loop terminates when the user has entered 12
@@ -93,12 +99,12 @@ Public Class frmWebsiteTraffic
 
                     ' convert the value entered from a string 
                     ' to the integer data type
-                    intTimeEntered = Convert.ToInt32(strTimeEntered)
+                    decTimeEntered = Convert.ToDecimal(strTimeEntered)
 
                     ' perform the processing when the user 
                     ' enters a valid time value
-                    lstVisitorData.Items.Add(intTimeEntered)
-                    decTotalTimeSpent += intTimeEntered
+                    lstVisitorData.Items.Add(decTimeEntered)
+                    decTotalTimeSpent += decTimeEntered
                     intNumberOfEntries += 1
                     strInputMessage = cstrNormalMessage
 
@@ -129,7 +135,7 @@ Public Class frmWebsiteTraffic
             ' display the average time spent
             lblAverageTimeSpentLabel.Visible = True
             lblAverageTimeSpent.Visible = True
-            lblAverageTimeSpent.Text = decAverageTimeSpent.ToString("F2") & " seconds"
+            lblAverageTimeSpent.Text = decAverageTimeSpent.ToString("F") & " seconds"
 
         Else
             ' user did not enter any value
